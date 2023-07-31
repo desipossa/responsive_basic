@@ -1,0 +1,150 @@
+#header {
+    min-width: 1200px;
+}
+
+
+#header .top_bar {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .top_bar .inner {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 31px;
+    font-size: 14px;
+}
+
+#header .top_bar .inner li {
+    padding: 0 8px;
+    border-right: 1px solid #ddd;
+}
+
+#header .head_wrap {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .head_wrap .inner {
+    display: flex;
+    align-items: center;
+    height: 109px;
+}
+
+#header h1 {
+    flex: 0 0 320px;
+    /* width: 320px; */
+}
+
+#gnb {
+    margin: 0 0 0 auto;
+}
+
+#gnb>ul {
+    display: flex;
+    gap: 32px;
+}
+
+#gnb>ul>li>a {
+    display: block;
+    line-height: 109px;
+    white-space: nowrap;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+#main_visual {
+    position: relative;
+    z-index: 1;
+    height: 650px;
+    background: url(../images/main_slider01.jpg) center top/cover;
+}
+
+#main_customer {
+    /* position: relative;
+    top: -100px;
+    z-index: 2; */
+
+    /* transform: translate(0, -100px);
+    position: relative;
+    z-index: 2; */
+
+    position: relative;
+    z-index: 2;
+    margin: -100px 0 0 0;
+}
+
+#main_customer .inner {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+}
+
+#main_customer .inner li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    flex: 1;
+    transition: height 0.5s;
+}
+
+#main_customer .inner li:nth-child(1) {
+    background: #da544b;
+}
+
+#main_customer .inner li:nth-child(2) {
+    background: #f4cb4f;
+}
+
+#main_customer .inner li:nth-child(3) {
+    background: #337689;
+}
+
+#main_customer .inner li:nth-child(4) {
+    background: #6fa476;
+}
+
+#main_customer .inner li:not(.tel) a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    height: 120px;
+}
+
+#main_customer .inner li:not(.tel) a strong {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#main_customer .inner li:nth-child(1) a {
+    background: url(../images/icon_set_w.png) repeat-x 0 0;
+}
+
+#main_customer .inner li:nth-child(2) a {
+    background: url(../images/icon_set_w.png) repeat-x -100px 0;
+}
+
+#main_customer .inner li:nth-child(3) a {
+    background: url(../images/icon_set_w.png) repeat-x -200px 0;
+}
+
+#main_customer .inner li:nth-child(4) a {
+    background: url(../images/icon_set_w.png) repeat-x -300px 0;
+}
+
+
+
+#main_customer .inner li:not(.tel):hover {
+    height: 200px;
+}
+
+#main_customer .inner li.tel {
+    flex: 2;
+    background: #f2f2f2;
+}
